@@ -1,0 +1,96 @@
+*{ 
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.info{
+    position: relative;
+    max-width: 600px;
+    padding: 20px;
+    background-color:transparent;
+    backdrop-filter: blur(40px);
+    border: 4px white;
+    border-radius: 30px;
+    align-items: center;
+    margin: auto;
+    box-shadow:5px 5px 15px #000;
+    
+    
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(food.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+   text-align: center;
+   color:deepskyblue;
+   font-size: 50px;
+   
+}
+
+h4{
+    color:deepskyblue;
+    font-size: 30px;
+}
+
+p{
+  text-align: center;
+  color:white;
+}
+
+.gallery{
+    text-align: center;
+    
+}
+
+
+
+.SiteMap{
+    text-align: center;
+}
+
+.PageEditor{
+    text-align: center;
+}
+
+.Contentpage{
+    text-align: center;
+}
+button{
+    align-items:center;}
+
+a{
+ color:white;
+ font-weight: bold;
+ text-decoration: none;
+ padding: 10px;
+ background-color:rgba(0, 36, 99, 0.766);
+ border-radius: 10px;
+ text-align: center;
+ 
+}
+
+a:hover{
+    background-color:black;
+    transition: 0.3s ease-in-out;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+  
+
+
+

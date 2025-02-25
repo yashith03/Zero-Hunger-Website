@@ -1,0 +1,335 @@
+body{
+    font-family: monospace;
+    overflow-x: hidden;
+    font-synthesis: none;
+}
+a{
+    text-decoration: none;
+}
+.Container{
+    width: 1200px;
+    margin: auto;
+    max-width: 90%;
+    transition: transform 1s;
+}
+header img{
+    width: 60px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-Content: space-between;
+}
+header .Cart_icon{
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+header .Total_Quantity{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: x-large;
+    background-color: #b31010;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-Content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateX(20px);
+}
+.Container .All_product_text{
+    align-Content: center;
+    font-weight: 700;
+    font-size: 50px;
+}
+#CartProducts{
+    align-Content: center;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.Product_List{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+   
+}
+.Product_List .item img{
+   
+    object-fit: cover;
+    
+    height: 265px;
+    padding-top: 30px;
+    
+  
+    
+
+   
+}
+.Product_List .item{
+    justify-Content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+    border:1px solid #2980b9;
+    box-shadow: 0 0 10px  rgba(0,0,0,0.3);
+
+   
+}
+.Product_List .item h2{
+    font-weight: 700;
+    font-size: x-large;
+}
+.Product_List .item .Price{
+    font-size: x-large;
+}
+
+.Product_List .item button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(1, 1, 119);
+    color: #fff;
+    width: 50%;
+    border: none;
+    padding: 20px 30px;
+    box-shadow: 0 10px 50px #000;
+    cursor: pointer;
+    transform: translateX(-50%) translateY(100px);
+    opaCity: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.Product_List .item:hover button{
+    transition:  0.5s;
+    opaCity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+.Cart{
+    color: #fff;
+    position: fixed;
+    width: 400px;
+    max-width: 80vw;
+    height: 100vh;
+    background-color: #0E0F11;
+    top: 0px;
+    right: -100%;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    gap: 20px;
+    transition: right 1s;
+}
+
+.Cart .Buttons .Checkout{
+    background-color: #002d87;
+    color: #000;
+}
+.Cart h2{
+    color: #278dfb;
+    padding: 20px;
+    height: 30px;
+    margin: 0;
+}
+
+
+.Cart .Cart_list .item{
+    display: grid;
+    grid-template-columns: 50px 1fr 70px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+.Cart .Cart_list img{
+    
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.Cart .Cart_list .item .Name{
+    font-weight: bold;
+}
+.Cart .Cart_list .item .Quantity{
+    display: flex;
+    justify-Content: end;
+    align-items: center;
+}
+.Cart .Cart_list .item .Quantity span{
+    display: block;
+    width: 50px;
+    text-align: center;
+}
+
+.Cart .Cart_list{
+    padding: 20px;
+    overflow: auto;
+}
+.Cart .Cart_list::-webkit-scrollbar{
+    width: 0;
+}
+
+.Cart .Buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+.Cart .Buttons div{
+    background-color: #000;
+    display: flex;
+    justify-Content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Cart .Buttons a{
+    color: #fff;
+    text-decoration: none;
+}
+.City ,.Country{
+    background-color:#0d16bfa6;
+}
+.CheckoutLayout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px;
+}
+.CheckoutLayout .right{
+    background-color:#6bbdf9;
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+}
+.CheckoutLayout .right .form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #71c4ff;
+    padding-bottom: 20px;
+}
+.CheckoutLayout .form h1,
+.CheckoutLayout .form .Group:nth-child(-n+3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.CheckoutLayout .form input, 
+.CheckoutLayout .form select
+{
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    border:none;
+    background-color: #0d16bfa6;
+    color: #fff;
+}
+.CheckoutLayout .right .return .row{
+    display: flex;
+    justify-Content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.CheckoutLayout .right .return .row div:nth-child(2){
+    font-weight: bold;
+    font-size: x-large;
+}
+.Summary{
+    font-size: large;
+    font-weight: 600;
+}
+.buttonCheckout{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1c2fc6e1;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+
+
+}
+.ReturnCart h1{
+    border-top: 1px solid #eee;  
+    padding: 20px 20px;
+    
+}
+.ReturnCart .list .item img{
+    height: 50px;
+    border-radius: 3px;
+    padding: 4px;
+}
+.ReturnCart .list .item{
+    display: grid;
+    grid-template-columns: 80px 1fr  50px 80px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    box-shadow: 0 10px 20px #5555;
+    border-radius: 20px;
+    
+}
+.ReturnCart .list .item .Name,
+.ReturnCart .list .item .returnPrice{
+    font-size: large;
+    font-weight: bold;
+}
+.backToShopButton {
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    margin-top: 20px; /* Add margin to separate from other elements */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.backToShopButton:hover {
+    background-color: #2980b9; /* Darker blue background color on hover */
+}
+
+
+/* For screens smaller than 768px (typical tablets) */
+@media only screen and (max-width: 768px) {
+    .Container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .CheckoutLayout {
+        grid-template-columns: 1fr; /* Change grid layout to 1 column */
+    }
+    .Product_List {
+        grid-template-columns: repeat(2, 1fr); /* Change grid layout to 2 columns */
+        gap: 10px; /* Reduce gap between items */
+}
+
+.Product_List .item img {
+    height: auto; /* Allow images to resize proportionally */
+}
+
+.Product_List .item {
+    margin-bottom: 10px; /* Reduce margin between items */
+}
+}
+
+/* For screens smaller than 480px (typical smartphones) */
+@media only screen and (max-width: 400px) {
+    .Container {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+    .listProduct {
+        grid-template-columns: 2fr; /* Change grid layout to 1 column */
+    }
+
+}

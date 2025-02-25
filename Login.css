@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:lightblue; /* Light gray background */
+    margin: 0;
+    
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ff5722; /* Orange heading */
+    top: auto;
+    margin-top: 60px;
+}
+main{
+    margin-top: 0;
+    margin-bottom: 1%;
+  }
+  
+
+fieldset {
+    margin: 20px auto;
+    width: 60%;
+    max-width: 600px; /* Maximum width for larger screens */
+    border: 4px solid #4caf50; /* Green border color */
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff; /* White background */
+}
+
+legend {
+    font-size: 1.5em; /* Larger legend text */
+    font-weight: bold;
+    color: #4caf50; /* Green legend color */
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+    max-width: 200px; /* Maximum width for larger screens */
+    text-align: right;
+    margin-right: 10px;
+    color: #ff5722; /* Orange label color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 60%;
+    max-width: 400px; /* Maximum width for larger screens */
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 1.2em; /* Larger input text */
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.2em; /* Larger button text */
+    background-color: #4caf50; /* Green button color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+#progressContainer {
+    font-size: 1.5em; /* Larger progress text */
+    margin-bottom: 40px; /* Increased margin for spacing */
+    color: #ff5722; /* Orange progress text color */
+}
+/* Reset default margin for body */
+body {
+    margin: 0;
+  }
+  
+  /* Navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar img {
+    height: 40px;
+    margin: top 3px;
+  }
+  
+  /* Main content area */
+  
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    top: 100%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  

@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "Name": "ZERO-HUNGER HAT",
+        "Price": 12,
+        "image": "images/hat.jpg"
+    },
+    {
+        "id": 2,
+        "Name": "ZERO-HUNGER HOODIE",
+        "Price": 15,
+        "image": "images/hoodie.jpg"
+    },
+    {
+        "id": 3,
+        "Name": "ZERO-HUNGER JACKET",
+        "Price": 25,
+        "image": "images/jacket.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "Name": "ZERO-HUNGER OVERSIZED SWEATSHIRT",
+        "Price": 20,
+        "image": "images/Oversized_sweatshirt.jpg"
+    },
+    {
+        "id": 5,
+        "Name": "ZERO-HUNGER SWEATSHIRT",
+        "Price": 12,
+        "image": "images/sweatshirt.jpg"
+    },
+    {
+        "id": 6,
+        "Name":"ZERO-HUNGER T SHIRT",
+        "Price": 15,
+        "image": "images/tshirt.jpg"
+    }
+]

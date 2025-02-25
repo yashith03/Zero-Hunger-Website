@@ -1,0 +1,90 @@
+*{ 
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.details{
+    position: relative;
+    max-width: 600px;
+    padding: 20px;
+    background-color:transparent;
+    backdrop-filter: blur(40px);
+    border: 4px white;
+    border-radius: 30px;
+    align-items: center;
+    margin: auto;
+    box-shadow:5px 5px 15px #000;
+    
+    
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(foodd.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+   text-align: center;
+   color:deepskyblue;
+   font-size: 50px;
+   
+}
+
+h4{
+    color:deepskyblue;
+    font-size: 30px;
+}
+
+p{
+  text-align: center;
+  color:white;
+}
+
+.shop{
+    text-align: center;
+    
+}
+
+ul{
+    list-style-position: inside; 
+    display: inline-flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
+    padding-left: 0; 
+    color: white;
+}
+
+.Splash_Screen{
+    text-align: center;
+}
+
+.Page_Editor{
+    text-align: center;
+}
+
+.Content_page{
+    text-align: center;
+}
+button{
+    align-items:center;}
+
+a{
+ color:white;
+ font-weight: bold;
+ text-decoration: none;
+ padding: 10px;
+ background-color:rgba(0, 36, 99, 0.766);
+ border-radius: 10px;
+ text-align: center;
+ 
+}
+
+a:hover{
+    background-color:rgb(1, 70, 219);
+    transition: 0.3s ease-in-out;
+}

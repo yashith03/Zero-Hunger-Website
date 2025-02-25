@@ -1,0 +1,132 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(hang.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.Loader_Container {
+    width: 100vw;
+    /* Adjust width relative to viewport width */
+    margin-top: 4vw;
+    position: relative;
+    align-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+.Loader {
+    width: 0;
+    /* Adjust width relative to viewport width */
+    height: 0.5vw;
+    /* Adjust height relative to viewport width */
+    background-color:white;
+    margin-top: 0;
+    animation: loading 4s linear forwards;
+    border-radius: 30px;
+    align-content: center;
+  
+}
+
+@keyframes loading {
+    to {width: 90vw;}
+}
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color:white;
+   
+}
+
+/* Container for the entire content */
+.Container {
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    
+   
+}
+
+/* Title style */
+h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+    color:white;
+}
+
+/* Mission statement style */
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* Student cards Container */
+.Students {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 70px;
+    
+}
+
+/* Individual student card style */
+.student {
+    background-color: transparent;
+    backdrop-filter: blur(60px);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+    border: white;
+    border: 1px solid;
+}
+
+/* Student name style */
+.student h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Student ID style */
+.student p {
+    font-size: 16px;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #veno{
+        padding: 10px;
+    }
+    .Students{padding-bottom: 60px;
+    }
+    @keyframes loading {
+        to {width: 80vw;}
+
+  
+  }
+}
+
+  
+  /* Media queries for mobile */
+  @media only screen and (max-width: 767px) {
+    #veno{
+        padding: 10px;
+    }
+    h1{
+        margin-bottom: 0;
+    }
+    .Students{
+        padding-bottom: 0;
+    }
+      
+    @keyframes loading {
+        to {width: 80vw;}
+    
+  }
+}

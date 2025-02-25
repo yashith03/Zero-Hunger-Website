@@ -1,0 +1,160 @@
+body{
+  background-color: aquamarine;
+}
+#sitemap {
+  /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+  border: 5px solid whitesmoke; /* Optional: Border for visualization */
+  position: absolute;
+  background-color: silver;
+  left: 10%;
+  right: 10%;
+  top: 23%;
+  width: 100%; /* Make the SVG element take full width */
+  max-width: 900px; /* Limit the maximum width of the SVG */
+  height:300px;
+  background-image: url(s5.jpeg);
+  background-size: cover; /* Optional: Adjusts the size of the background image */
+  background-position: center; /* Optional: Centers the background image */
+  background-repeat: no-repeat; /* Optional: Prevents the background image from repeating */
+
+}
+
+#circle {
+  fill: lightgoldenrodyellow; /* Circle color */
+  stroke: #000000; /* Circle border color */
+  stroke-width: 2; /* Circle border width */
+}
+
+#text1 {
+  font-family: Arial, sans-serif; /* Font family for text */
+  font-size: 6px; /* Font size for text */
+  text-anchor: middle; /* Text anchor in the middle */
+  font-weight: bolder;
+}
+#text2{
+  font-family: Arial, sans-serif; /* Font family for text */
+  font-size: 6px; /* Font size for text */
+  text-anchor: middle; /* Text anchor in the middle */
+  font-weight: bolder;
+}
+#text3 {
+  font-family: Arial, sans-serif; /* Font family for text */
+  font-size: 6px; /* Font size for text */
+  text-anchor: middle; /* Text anchor in the middle */
+  font-weight: bolder;
+}
+#text4{
+  font-family: Arial, sans-serif; /* Font family for text */
+  font-size: 6px; /* Font size for text */
+  text-anchor: middle; /* Text anchor in the middle */
+  font-weight: bolder;
+}
+#text5 {
+  font-family: Arial, sans-serif; /* Font family for text */
+  font-size: 6px; /* Font size for text */
+  text-anchor: middle; /* Text anchor in the middle */
+  font-weight: bolder;
+}
+#text6{
+  font-family: Arial, sans-serif; /* Font family for text */
+  font-size: 6px; /* Font size for text */
+  text-anchor: middle; /* Text anchor in the middle */
+  font-weight: bolder;
+}
+
+#rec1 {
+  fill: mediumturquoise; /* Rectangle color */
+  stroke: white; /* Rectangle border color */
+  stroke-width: 2; /* Rectangle border width */
+}
+#rec2 {
+  fill:burlywood; /* Rectangle color */
+  stroke: white; /* Rectangle border color */
+  stroke-width: 2; /* Rectangle border width */
+}
+
+#rec3 {
+  fill: khaki; /* Rectangle color */
+  stroke: white; /* Rectangle border color */
+  stroke-width: 2; /* Rectangle border width */
+}
+
+#rec4 {
+  fill: silver; /* Rectangle color */
+  stroke: white; /* Rectangle border color */
+  stroke-width: 2; /* Rectangle border width */
+}
+#rec5 {
+  fill: violet; /* Rectangle color */
+  stroke: white; /* Rectangle border color */
+  stroke-width: 2; /* Rectangle border width */
+}
+
+
+
+line {
+  stroke: white; /* Line color */
+  stroke-width: 2; /* Line width */
+}
+#heading{
+  background-color: lightseagreen;
+  text-align: center;
+  position: fixed;
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 5px solid black;
+  margin-top: 10px; /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust as needed */
+  left: 25%;
+
+}
+  
+body {
+  margin: 0;
+}
+/* Navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar img {
+  height: 40px;
+  margin: top 3px;
+}
+/* Main content area */
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+

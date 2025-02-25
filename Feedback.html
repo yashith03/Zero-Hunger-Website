@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body class="feedback">
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="Home.html"><img src="logo.jpg" width="260px" height="48px" alt=""></a>
+
+        <a href="Home.html">Home</a>
+        <a href="Login.html">Login</a>
+        <a href="shop.html">Shop</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="Feedback.html">Feedback</a>
+        <a href="aboutus.html">About us</a>
+    </div>
+    <form method="post" id="feedbackForm">
+        <fieldset>
+            <legend><b>Feedback</b></legend>
+
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <p>Was this your first time visiting?</p>
+            <label for="first-time-yes">Yes</label>
+            <input type="radio" id="first-time-yes" name="first-time" value="yes" >
+            <label for="first-time-no">No</label>
+            <input type="radio" id="first-time-no" name="first-time" value="no" >
+            
+            <p>Was this website informative and easy to navigate through?</p>
+            <label for="navigate-yes">Yes</label><br>
+            <input type="radio" id="navigate-yes" name="navigate" value="yes" >
+            <label for="navigate-no">No</label><br>
+            <input type="radio" id="navigate-no" name="navigate" value="no" >
+            
+            <label for="improvements"> If "No", suggest any improvements for the future:</label><br>
+            <textarea id="improvements" name="improvements"></textarea><br>
+
+            <label for="satisfaction">How satisfied are you with Our services? Choose from 0 to 10, with 1 being "Not satisfied at all!" and 10 being "Extremely satisfied!"</label><br>
+            <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" value="0"><br>
+
+            <p>Would you recommend our services?</p>
+            <label for="recommend-yes">Yes</label><br>
+            <input type="radio" id="recommend-yes" name="recommend" value="yes" >
+            <label for="recommend-no">No</label><br>
+            <input type="radio" id="recommend-no" name="recommend" value="no" >
+           
+            <p>Would you like to receive updates about the website and any offers?</p>
+            <label for="updates-yes">Yes - via Email</label><br>
+            <input type="radio" id="updates-yes" name="updates" value="yes" >
+            <label for="updates-no">No</label><br>
+            <input type="radio" id="updates-no" name="updates" value="no" >
+            
+            <label for="questions">Do you have any additional questions or requests?</label><br>
+            <textarea id="questions" name="questions"></textarea><br><br><br>
+
+            <input type="submit" value="Submit" id="submitButton">
+            <input type="reset" value="Cancel">
+        </fieldset>
+    </form>
+    <script src="Feedback.js"></script>
+
+    <footer id="myFooter">
+        <div class="container">
+            <h3>Zero Hunger</h3>
+            <p> Yasith Chandeep | Venojan | Ashen De Zoysa | Dishen Fernando </p>
+            <p>Copyright &copy;2024 Zero Hunger </p>
+        </div>
+    </footer>
+</body>
+</html>
