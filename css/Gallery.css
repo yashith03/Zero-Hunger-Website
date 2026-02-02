@@ -89,14 +89,11 @@ body{
   animation: animate 1s ease-in-out 1 forwards;
 
 }
-.content .des1 .des2 .des3 .des4 .des5 .des6{
-  margin-top: px;
+.content div[class^="des"]{
+  margin-top: 10px;
   margin-bottom: 20px;
   opacity:0 ;
-  animation: animate 1s ease-in-out 1 forwards;
-  opacity:0 ;
   animation: animate 1s ease-in-out 0.3s 1 forwards;
-  
 }
 .content button{
   padding: 10px 20px;
