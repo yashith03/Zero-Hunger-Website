@@ -20,18 +20,18 @@ ZERO-HUNGER-WEBSITE/
 │   └── product.json          # Product data for the merch shop
 │
 ├── html/                     # Core Page Structure
-│   ├── Home.html             # Landing page with mission & parallax hero
+│   ├── home.html             # Landing page with mission & parallax hero
 │   ├── shop.html             # Merch shop with dynamic cart logic
 │   ├── gallery.html          # Dynamic image gallery (CSS Grid)
-│   ├── Feedback.html         # User feedback form with validation
-│   ├── Login.html            # User profile & authentication simulation
+│   ├── feedback.html         # User feedback form with validation
+│   ├── login.html            # User profile & authentication simulation
 │   ├── checkout.html         # Multi-step checkout process
 │   ├── sitemap.html          # Interactive SVG-based site map
 │   ├── splash.html           # Animated entry screen
 │   ├── aboutus.html          # Team & Project credits
-│   ├── ContentPage_S2.html   # Educational: Urban Hunger
-│   ├── ContentpageS4.html    # Educational: Causes of Hunger
-│   ├── YashithContent.html   # Educational: Food Security & Nutrition
+│   ├── contentpages4.html   # Educational: Urban Hunger
+│   ├── contentpages4.html    # Educational: Causes of Hunger
+│   ├── yashithcontent.html   # Educational: Food Security & Nutrition
 │   └── ... (Student Portfolios & Editor Pages)
 │
 ├── css/                      # Stylesheets (Modular Design System)
@@ -70,7 +70,7 @@ ZERO-HUNGER-WEBSITE/
 - **SVG Visualization**: A visual tree map of the entire website.
 - **Dynamic Views**: Toggle between Primary Pages and Internal Sub-pages using JavaScript event listeners.
 
-### 📝 Integrated Feedback & Profile (`Feedback.html` / `Login.html`)
+### 📝 Integrated Feedback & Profile (`feedback.html` / `login.html`)
 - **Input Validation**: Robust client-side validation for emails, phone numbers, and required fields.
 - **User Progression**: Animated profile completion tracking for user registration.
 
