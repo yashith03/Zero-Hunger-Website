@@ -1,95 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
-<link rel="stylesheet" href="css/Style.css" type="text/css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Hunger - Home</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<!-- Navigation bar -->
+<!-- Navigation Bar -->
 <div class="navbar">
-  <a href="Home.html"><img src="images/Logo.png" width="260" height="48" alt="Zero Hunger Logo"></a>
-  <a href="Home.html">Home</a>
-  <a href="Login.html">Login</a>
-  <a href="shop.html">Shop</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="sitemap.html">Sitemap</a>
-  <a href="Feedback.html">Feedback</a>
-  <a href="aboutus.html">About us</a>
+    <a href="Home.html"><img src="images/Logo.png" alt="Zero Hunger Logo"></a>
+    <div style="display: flex; gap: 30px;">
+        <a href="Home.html">Home</a>
+        <a href="Login.html">Login</a>
+        <a href="shop.html">Shop</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="Feedback.html">Feedback</a>
+        <a href="aboutus.html">About us</a>
+    </div>
 </div>
 
-<div class="parallax"></div>
+<!-- Hero Section -->
+<section class="hero">
+    <h1>ZERO HUNGER</h1>
+    <p>CULTIVATING A WORLD WHERE NO ONE GOES TO BED HUNGRY</p>
+</section>
 
-<div class="px">
-  <h1 id="head1">Zero Hunger</h1></div>
-    <p class="paragraph">Zero Hunger is one of the United Nations Sustainable Development Goals (SDGs) aimed at ending hunger, achieving food security, improving nutrition, and promoting sustainable agriculture by 2030.</p>
-    <div class="paragraph">
-      <h3>Why is Zero Hunger important?</h3>
-      <p>Hunger and malnutrition are significant global issues, affecting millions of people worldwide. Achieving Zero Hunger not only ensures that everyone has access to sufficient and nutritious food but also contributes to poverty reduction, economic growth, and sustainable development.</p>
-    </div>  
+<!-- Content Grid 1 -->
+<div class="section-container card-grid-2">
+    <!-- Purpose Card -->
+    <article class="content-card">
+        <span class="card-tag">OUR PURPOSE</span>
+        <h2>Why Zero Hunger is Important?</h2>
+        <p>Food security is the cornerstone of human development. Without access to nutritious food, communities cannot thrive, children cannot learn, and economies cannot grow. We are dedicated to building sustainable systems that ensure long-term stability.</p>
+        <div class="purpose-img"></div>
+    </article>
+
+    <!-- Stats Card -->
+    <article class="content-card">
+        <span class="card-tag">GLOBAL CONTEXT</span>
+        <h2>Global Hunger Statistics</h2>
+        <div class="stat-item">
+            <div class="stat-number">828M</div>
+            <div class="stat-text">People globally face chronic hunger</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">1 in 10</div>
+            <div class="stat-text">People go to bed on an empty stomach</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">3.1B</div>
+            <div class="stat-text">Cannot afford a healthy diet</div>
+        </div>
+    </article>
 </div>
 
-<div class="paragraph1">
-    <h3><center>How can we contribute to Zero Hunger?</center></h3>
-    <ul>
-      <li>Promote sustainable agriculture practices</li>
-      <li>Support small-scale farmers and rural communities</li>
-      <li>Reduce food waste and loss</li>
-      <li>Ensure equitable access to resources and opportunities</li>
-      <li>Advocate for policies that address food insecurity and malnutrition</li>
-     </ul>
-</div>  
+<!-- Contribution Section -->
+<div class="section-container">
+    <div class="contribution-card">
+        <h2>How to Contribute</h2>
+        <div class="contribution-grid">
+            <div class="check-item"><i class="fa-solid fa-check"></i> Monthly Direct Donations</div>
+            <div class="check-item"><i class="fa-solid fa-check"></i> Food Surplus Redistribution</div>
+            <div class="check-item"><i class="fa-solid fa-check"></i> Corporate Partnerships</div>
+            <div class="check-item"><i class="fa-solid fa-check"></i> Community Garden Volunteering</div>
+            <div class="check-item"><i class="fa-solid fa-check"></i> Advocacy and Education</div>
+            <div class="check-item"><i class="fa-solid fa-check"></i> Sustainable Tech Support</div>
+        </div>
+    </div>
 
-<div class="paragraph">
-  <h3>Global Hunger Statistics</h3>
-  <p>According to the Food and Agriculture Organization (FAO), approximately 690 million people worldwide are undernourished. This means one in every nine people do not have enough food to lead a healthy, active life.</p>
+    <!-- Shop Bar -->
+    <div class="shop-bar">
+        <div>
+            <h2>Shop With Us</h2>
+            <p>100% of proceeds from our merchandise go directly to funding agricultural programs in developing regions.</p>
+        </div>
+        <a href="shop.html" class="shop-btn">SHOP NOW</a>
+    </div>
 </div>
 
-<div class="paragraph">
-  <h3>Shop With Us</h3>
-  <p>Support our mission to end hunger by making a donation today. Every contribution helps provide nutritious meals to those in need.</p>
-  <button id="but" onclick="window.location.href='shop.html'">Shop Now</button>
+<!-- News & Stories -->
+<div class="section-container news-stories-grid">
+    <!-- Latest News -->
+    <section>
+        <h2 class="section-title">LATEST NEWS</h2>
+        <div class="news-card">
+            <span class="news-date">OCT 04, 2025</span>
+            <h3>New Irrigation Tech Deployed</h3>
+            <p>Deploying smart water solutions in arid regions to boost crop yields by 40%.</p>
+        </div>
+        <div class="news-card">
+            <span class="news-date">OCT 19, 2025</span>
+            <h3>Policy Change Advocacy</h3>
+            <p>Working with local governments to secure land rights for small-scale farmers.</p>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section>
+        <h2 class="section-title">WFP SUCCESS STORIES</h2>
+        <div class="story-card">
+            <div class="story-header">
+                <div class="story-avatar" style="background-image: url('images/ac1.jpg');"></div>
+                <div class="story-meta">
+                    <h4>Zambia Initiative</h4>
+                    <span>IMPACT: 12,000 FAMILIES</span>
+                </div>
+            </div>
+            <p>"The new drought-resistant seeds have transformed our community's future."</p>
+        </div>
+        <div class="story-card">
+            <div class="story-header">
+                <div class="story-avatar" style="background-image: url('images/g8.jpg');"></div>
+                <div class="story-meta">
+                    <h4>Coastal Recovery</h4>
+                    <span>IMPACT: 4,500 MATRICES</span>
+                </div>
+            </div>
+            <p>"Reduced focus on marine agriculture has stabilized local protein sources."</p>
+        </div>
+    </section>
 </div>
-  
 
-<div class="paragraph">
-  <h3>Success Stories</h3>
-  <p>In 2019, the World Food Programme (WFP) successfully reached over 97 million people in 88 countries with food assistance. Their initiatives in conflict zones and areas affected by natural disasters have saved countless lives.</p>
+<!-- Student Links -->
+<div class="section-container">
+    <div class="student-block">
+        <h3>CONTENT PAGES</h3>
+        <div class="btn-row">
+            <button class="btn-student" onclick="window.location.href='YashithContent.html'">Student 1</button>
+            <button class="btn-student" onclick="window.location.href='ContentPage_S2.html'">Student 2</button>
+            <button class="btn-student" onclick="window.location.href='Content.html'">Student 3</button>
+            <button class="btn-student" onclick="window.location.href='ContentpageS4.html'">Student 4</button>
+        </div>
+    </div>
+    <div class="student-block" style="margin-top: 40px;">
+        <h3>PAGE EDITOR</h3>
+        <div class="btn-row">
+            <button class="btn-student" onclick="window.location.href='YashithPage.html'">Student 1</button>
+            <button class="btn-student" onclick="window.location.href='PageEditor_S2.html'">Student 2</button>
+            <button class="btn-student" onclick="window.location.href='Page.html'">Student 3</button>
+            <button class="btn-student" onclick="window.location.href='PageEditorS4.html'">Student 4</button>
+        </div>
+    </div>
 </div>
 
-<div class="paragraph">
-  <h3>Take Action</h3>
-  <p>You can make a difference! Consider donating to organizations like the World Food Programme, volunteering at local food banks, or advocating for policies that prioritize food security and sustainable agriculture.</p>
-</div>
-
-
-<div class="paragraph1">
-  <h3><center>Latest News</center></h3>
-  <ul>
-    <li>New Study Reveals Impact of Climate Change on Food Security</li>
-    <li>Innovative Farming Techniques Increase Crop Yields in Developing Countries</li>
-    <li>Local Community Launches Food Drive to Combat Hunger</li>
-  </ul>
-</div>
-
-<div class="pages">
-  <h3>Content pages</h3>
-  <a href="YashithContent.html"><button class="button-30" role="button">student 1</button></a>
-  <a href="ContentPage_S2.html"><button class="button-30" role="button">student 2 </button></a>
-  <a href="Content.html"><button class="button-30" role="button">student 3</button></a>
-  <a href="ContentpageS4.html"><button class="button-30" role="button">student 4</button></a>
-</div>
-
-<div class="pages">
-  <h3>Page editor</h3>
-  <a href="YashithPage.html"><button class="button-30" role="button">student 1</button></a>
-  <a href="PageEditor_S2.html"><button class="button-30" role="button">student 2 </button></a>
-  <a href="Page.html"><button class="button-30" role="button">student 3</button></a>
-  <a href="PageEditorS4.html"><button class="button-30" role="button">student 4</button></a>
-</div>
-
+<!-- Footer -->
 <footer id="myFooter">
-    <div class="container">
+    <div class="footer-container">
         <h3>Zero Hunger</h3>
         <p>Yasith Chandeepa | Venojan | Ashen De Zoysa | Dishen Fernando</p>
         <p>Copyright &copy;2024 Zero Hunger</p>
