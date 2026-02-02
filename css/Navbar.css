@@ -1,0 +1,136 @@
+/* Global Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 60px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    z-index: 2000;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    height: 55px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    background-color: #e8f5e9; /* Light green box from image */
+    padding: 0px 18px;
+    border-radius: 8px;
+    height: 42px;
+    transition: all 0.2s ease;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.nav-brand:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.15);
+}
+
+.nav-brand img {
+    height: 28px;
+    width: auto;
+    display: block;
+}
+
+.brand-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2e7d32;
+    letter-spacing: 0.5px;
+    font-family: 'Outfit', sans-serif;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #546e7a; /* Professional gray from image */
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+    padding: 5px 0;
+}
+
+.nav-links a:hover {
+    color: #2e7d32;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2e7d32;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-extra {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: #546e7a;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #2e7d32;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 5px 30px;
+    }
+    .nav-links {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        left: 10px;
+        right: 10px;
+        padding: 5px 15px;
+    }
+    .brand-text {
+        display: none; /* Hide text on small mobiles to save space */
+    }
+    .nav-links {
+        display: none; /* In a real app, you'd add a hamburger menu here */
+    }
+}

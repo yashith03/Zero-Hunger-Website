@@ -14,35 +14,7 @@ body {
 }
 
 /* Navigation Bar */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.navbar img {
-    height: 40px;
-    margin-top: 3px;
-}
+/* Modern Navigation Bar styles moved to Navbar.css */
 
 /* Feedback Container */
 .feedback-container {
