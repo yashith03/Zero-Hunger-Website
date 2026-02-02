@@ -183,22 +183,97 @@ footer {
     text-align: center;
 }
 
-/* Form Styles (if any exist on Home or generally imported) */
-form {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid #2980b9;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    font-family: monospace;
+.feedback {
+    background-image: url(../images/feedback.jpg.jpg);
 }
 
-input[type="text"], input[type="email"], textarea {
+/* Feedback Form Styles */
+form {
+    background-color: rgba(255, 255, 255, 0.95); /* More opaque */
+    width: 600px; /* From Feedback.html */
+    max-width: 90%;
+    margin: 100px auto 50px; /* Added top margin for navbar clearance */
+    padding: 40px;
+    border: 1px solid #2980b9; /* Theme Blue */
+    border-radius: 30px; /* Card style */
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    font-family: monospace;
+    text-align: left;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 28px;
+    color: #2980b9;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
     width: 100%;
     padding: 12px;
-    margin-top: 5px;
-    border: 1px solid #ccc; /* Or blue? Shop uses semi-transparent blue for some inputs */
+    margin-top: 8px;
+    border: 1px solid #2980b9; /* Theme boundary */
     border-radius: 10px;
     font-family: monospace;
     box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Radios and Range */
+input[type="radio"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+    accent-color: #2980b9; /* Theme Blue Slider */
+}
+
+/* Submit/Reset Buttons in Form */
+input[type="submit"], 
+input[type="reset"] {
+    background-color: rgb(1, 1, 119);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover, 
+input[type="reset"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
 }
