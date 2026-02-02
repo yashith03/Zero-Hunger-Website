@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Zero Hunger</title>
     <link rel="stylesheet" href="css/Login.css">
 </head>
 <body>
     <!-- Navigation bar -->
     <div class="navbar">
-        <a href="images/Logo.jpg"><img src="images/Logo.jpg" alt=""></a>
+        <a href="Home.html"><img src="images/Logo.png" width="260" height="48" alt="Zero Hunger Logo"></a>
         <a href="Home.html">Home</a>
         <a href="Login.html">Login</a>
         <a href="shop.html">Shop</a>
@@ -17,23 +19,35 @@
         <a href="aboutus.html">About us</a>
     </div>
 
-    <h1>Login to ZeroHunger</h1>
-    <button onclick="signIn()">Sign In</button>
-    <button onclick="logIn()">Log In</button>
-    <div id="profileContainer"></div>
-    <div id="progressContainer"></div>
-    <div id="profileCompletionMessage"></div>
+    <div class="login-container">
+        <div class="login-card">
+            <h1>WELCOME BACK</h1>
+            <p class="subtitle">Login to your Zero Hunger account</p>
+            
+            <div class="button-group">
+                <button class="primary-btn" onclick="signIn()">
+                    <span>SIGN IN</span>
+                </button>
+                <button class="secondary-btn" onclick="logIn()">
+                    <span>LOG IN</span>
+                </button>
+            </div>
 
-    <script src="js/Login.js">
-        
-    </script>
+            <div id="profileContainer" class="profile-container"></div>
+            <div id="progressContainer" class="progress-container"></div>
+            <div id="profileCompletionMessage" class="completion-message"></div>
+        </div>
+    </div>
+
+    <script src="js/Login.js"></script>
 
     <!-- Footer -->
-    
     <footer id="myFooter">
-        <h3>Zero Hunger</h3>
-        <p> Yasith Chandeep | Venojan | Ashen De Zoysa | Dishen Fernando </p>
-        <p>Copyright &copy;2024 Zero Hunger </p>
+        <div class="container">
+            <h3>Zero Hunger</h3>
+            <p>Yasith Chandeepa | Venojan | Ashen De Zoysa | Dishen Fernando</p>
+            <p>Copyright &copy;2024 Zero Hunger</p>
+        </div>
     </footer>
 </body>
 </html>
