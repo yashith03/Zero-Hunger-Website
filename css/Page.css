@@ -19,7 +19,7 @@
 }
 
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(foodd.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(../images/foodd.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -88,6 +88,3 @@ a:hover{
     background-color:rgb(1, 70, 219);
     transition: 0.3s ease-in-out;
 }
-
-
-

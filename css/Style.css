@@ -1,0 +1,204 @@
+/* Global Settings */
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar img {
+    height: 40px;
+    margin-top: 3px;
+}
+
+/* Parallax Section */
+.parallax {
+    background-image: url("../images/Coverphoto.png");
+    min-height: 80vh;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+/* Headers & Typography */
+h1, h2, h3, h4 {
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+#head1 {
+    font-size: 50px;
+    margin: 40px 0 20px;
+    color: #333;
+}
+
+.px {
+    background-color: transparent; /* Removed cyan */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Content Cards (replacing .paragraph and .paragraph1 styles) */
+.paragraph, .paragraph1 {
+    width: 1200px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #fff; /* Removed lightcyan */
+    border: 1px solid #2980b9; /* Theme Blue Border */
+    border-radius: 30px; /* Rounded corners like Shop */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center; /* Default center, can override for lists */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.paragraph h3, .paragraph1 h3 {
+    color: #2980b9; /* Theme Blue for headers inside cards */
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+}
+
+/* Alignment specifics */
+.paragraph p, .paragraph1 p {
+    color: #444;
+}
+
+.paragraph1 ul {
+    text-align: left;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.paragraph1 li {
+    margin-bottom: 10px;
+}
+
+/* Buttons (replacing .button-30 and generic buttons) */
+button, .button-30 {
+    background-color: rgb(1, 1, 119); /* Shop Dark Blue */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .button-30:hover {
+    background-color: #2980b9; /* Lighter Blue on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#but {
+    /* Shop Now button specific layout if needed, currently reusing general button style */
+    display: inline-block;
+    width: auto;
+}
+
+/* Pages Section */
+.pages {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.pages h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* List/Latest News styling tweaks */
+.latestnews {
+    background-color: #fff;
+    border: 1px solid #2980b9;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    margin-top: 50px;
+    font-family: monospace;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Form Styles (if any exist on Home or generally imported) */
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #2980b9;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    font-family: monospace;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Or blue? Shop uses semi-transparent blue for some inputs */
+    border-radius: 10px;
+    font-family: monospace;
+    box-sizing: border-box;
+}

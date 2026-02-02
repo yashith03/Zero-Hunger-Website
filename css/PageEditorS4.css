@@ -3,7 +3,7 @@
     font-family: sans-serif;
 }
 
-.details{
+.info{
     position: relative;
     max-width: 600px;
     padding: 20px;
@@ -19,7 +19,7 @@
 }
 
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(foodd.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(../images/food.webp);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -44,30 +44,22 @@ p{
   color:white;
 }
 
-.shop{
+.gallery{
     text-align: center;
     
 }
 
-ul{
-    list-style-position: inside; 
-    display: inline-flex; 
-    flex-direction: column; 
-    align-items: flex-start; 
-    justify-content: center; 
-    padding-left: 0; 
-    color: white;
-}
 
-.Splash_Screen{
+
+.SiteMap{
     text-align: center;
 }
 
-.Page_Editor{
+.PageEditor{
     text-align: center;
 }
 
-.Content_page{
+.Contentpage{
     text-align: center;
 }
 button{
@@ -85,6 +77,20 @@ a{
 }
 
 a:hover{
-    background-color:rgb(1, 70, 219);
+    background-color:black;
     transition: 0.3s ease-in-out;
 }
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+  
+
+
+
