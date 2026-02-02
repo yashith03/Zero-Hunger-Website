@@ -15,7 +15,7 @@ body{
   height: 100%;
   background: antiquewhite;
   box-shadow:0 30px 50px blanchedalmond;
-  margin-top: 2%;
+margin: 80px auto 0; 
   border-radius: 5px;
 
 }

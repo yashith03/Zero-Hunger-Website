@@ -8,9 +8,9 @@ a{
 }
 .Container{
     width: 1200px;
-    margin: auto;
     max-width: 90%;
     transition: transform 1s;
+    margin: 80px auto 0; 
 }
 header img{
     width: 60px;
