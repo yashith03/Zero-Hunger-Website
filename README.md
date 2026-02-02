@@ -6,7 +6,7 @@ An end-to-end web platform designed to raise awareness, provide educational reso
 
 ## 🚀 Deployment / Live Demo
 - 🌐 **Vercel Demo** → [https://zero-hunger-website.vercel.app/](https://zero-hunger-website.vercel.app/)
-- 🌐 **GitHub Pages** → [https://yashith03.github.io/Zero-Hunger-Website/html/splash.html](https://yashith03.github.io/Zero-Hunger-Website/html/splash.html)
+
 
 *(Note: Navigation starts from the Splash Screen)*
 
