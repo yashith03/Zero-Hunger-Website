@@ -3,86 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Editor</title>
-    <link rel="stylesheet" href="css/PageEditorS4.css">
-    <link rel="stylesheet" href="css/Navbar.css">
-    <link rel="stylesheet" href="css/Footer.css">
+    <title>Login - Zero Hunger</title>
+    <link rel="stylesheet" href="../css/Login.css">
+    <link rel="stylesheet" href="../css/Navbar.css">
+    <link rel="stylesheet" href="../css/Footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <div class="info">
-        <h1><b>PAGE EDITOR</b></h1>
-        <hr>
-
-        <p>
-            <b>
-                Name : Venojan Shanmugarajah <br>
-                Role : Student 2 <br>
-                I made edits to the following pages :
-            </b>
-        </p>
-
-        <hr>
-
-        <!-- Home Page -->
-        <div class="gallery">
-            <br>
-            <a href="#End">Go to Bottom</a>
-            <h4>Home Page</h4>
-            <p>
-                Created the main Home page using HTML and CSS,
-                establishing the visual layout and structure for the Zero Hunger website.
-            </p>
-            <a href="Home.html">Link to the Home Page</a>
+    <!-- Modern Navigation Bar -->
+    <nav class="navbar">
+        <a href="Home.html" class="nav-brand">
+            <img src="../images/Logo.png" alt="Zero Hunger Logo">
+        </a>
+        <div class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="Login.html">Login</a>
+            <a href="shop.html">Shop</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="Feedback.html">Feedback</a>
+            <a href="aboutus.html">About us</a>
         </div>
 
-        <hr>
+    </nav>
 
-        <!-- Feedback Page -->
-        <div class="SiteMap">
-            <h4>Feedback Page</h4>
-            <p>
-                Developed the Feedback page using HTML, CSS, and JavaScript
-                to collect user opinions and suggestions.
-            </p>
-            <a href="Feedback.html">Link to the Feedback Page</a>
+    <div class="login-container">
+        <div class="login-card">
+            <h1>WELCOME BACK</h1>
+            <p class="subtitle">Login to your Zero Hunger account</p>
+            
+            <div class="button-group">
+                <button class="primary-btn" onclick="signIn()">
+                    <span>SIGN IN</span>
+                </button>
+                <button class="secondary-btn" onclick="logIn()">
+                    <span>LOG IN</span>
+                </button>
+            </div>
+
+            <div id="profileContainer" class="profile-container"></div>
+            <div id="progressContainer" class="progress-container"></div>
+            <div id="profileCompletionMessage" class="completion-message"></div>
         </div>
-
-        <hr>
-
-        <!-- Content Page -->
-        <div class="Contentpage">
-            <h4>Content Page</h4>
-            <p>
-                Created the Content page using HTML and CSS,
-                containing an informative article about Urban Hunger and Food Deserts.
-            </p>
-            <a href="ContentPage_S2.html">Link to the Content Page</a>
-        </div>
-
-        <hr>
-
-        <!-- Page Editor -->
-        <div class="PageEditor" id="End">
-            <h4>Editor’s Page</h4>
-            <p>
-                Designed the Editor’s page using HTML and CSS,
-                showcasing the editor’s name, role, and completed tasks.
-            </p>
-            <a href="PageEditor_S2.html">Link to the Editor Page</a>
-        </div>
-
-        <br><br>
     </div>
+
+    <script src="../js/Login.js"></script>
 
     <!-- Modern Footer -->
     <footer class="footer">
         <div class="footer-top">
             <div class="footer-brand">
                 <div class="brand-box">
-                    <img src="images/Logo.png" alt="Logo" class="brand-logo">
+                    <img src="../images/Logo.png" alt="Logo" class="brand-logo">
                     <span class="brand-name">ZERO HUNGER</span>
                 </div>
                 <p class="brand-desc">A global initiative committed to achieving Sustainable Development Goal 2: End hunger, achieve food security and improved nutrition.</p>

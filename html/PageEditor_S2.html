@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/aboutus.css">
-    <link rel="stylesheet" href="css/Navbar.css">
-    <link rel="stylesheet" href="css/Footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor</title>
+    <link rel="stylesheet" href="../css/PageEditorS4.css">
+    <link rel="stylesheet" href="../css/Navbar.css">
+    <link rel="stylesheet" href="../css/Footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Team</title>
 </head>
+
 <body>
     <!-- Modern Navigation Bar -->
     <nav class="navbar">
         <a href="Home.html" class="nav-brand">
-            <img src="images/Logo.png" alt="Zero Hunger Logo">
-
+            <img src="../images/Logo.png" alt="Zero Hunger Logo">
         </a>
         <div class="nav-links">
             <a href="Home.html">Home</a>
@@ -26,58 +27,77 @@
         </div>
     </nav>
 
+    <div class="info">
+        <h1><b>PAGE EDITOR</b></h1>
+        <hr>
 
-    <h1>Student Details</h1>
-    
-    
-    <div class="team-members">
-        <div class="team-member" onclick="toggleDetails(this)">
-            <img src="images/i3.jpg" alt="Juicer 1" title="Juicer 1">
-            <div class="details">
-                <h3>Name: Yashith Chandeepa</h3>
-                <p>Role: Student Number 1</p>
-                <p>Designed and implemented pages: Shop | Splash screen</p>
-            </div>
+        <p>
+            <b>
+                Name : Venojan Shanmugarajah <br>
+                Role : Student 2 <br>
+                I made edits to the following pages :
+            </b>
+        </p>
+
+        <hr>
+
+        <!-- Home Page -->
+        <div class="gallery">
+            <br>
+            <a href="#End">Go to Bottom</a>
+            <h4>Home Page</h4>
+            <p>
+                Created the main Home page using HTML and CSS,
+                establishing the visual layout and structure for the Zero Hunger website.
+            </p>
+            <a href="Home.html">Link to the Home Page</a>
         </div>
-      
-        <div class="team-member" onclick="toggleDetails(this)">
-            <img src="images/i1.jpg" alt="Juicer 2" title="Juicer 2">
-            <div class="details">
-                <h3>Name: Venojan Shanmugarajah</h3>
-                <p>Role: Student Number 2</p>
-                <p>Designed and implemented pages: Feedback | Home page</p>
-            </div>
+
+        <hr>
+
+        <!-- Feedback Page -->
+        <div class="SiteMap">
+            <h4>Feedback Page</h4>
+            <p>
+                Developed the Feedback page using HTML, CSS, and JavaScript
+                to collect user opinions and suggestions.
+            </p>
+            <a href="Feedback.html">Link to the Feedback Page</a>
         </div>
-      
-        <div class="team-member" onclick="toggleDetails(this)">
-            <img src= "images/i2.jpg" alt="Juicer 3" title="Juicer 3">
-            <div class="details">
-                <h3>Name: Ashen De Zoysa</h3>
-                <p>Role: Student Number 3</p>
-                <p>Designed and implemented pages: User Profile | Teams</p>
-            </div>
+
+        <hr>
+
+        <!-- Content Page -->
+        <div class="Contentpage">
+            <h4>Content Page</h4>
+            <p>
+                Created the Content page using HTML and CSS,
+                containing an informative article about Urban Hunger and Food Deserts.
+            </p>
+            <a href="ContentPage_S2.html">Link to the Content Page</a>
         </div>
-      
-        <div class="team-member" onclick="toggleDetails(this)">
-            <img src="images/i4.jpg" alt="Juicer 4" title="Juicer 4">
-            <div class="details">
-                <h3>Name: Dishen Fernando</h3>
-                <p>Role: Student Number 4</p>
-                <p>Designed and implemented pages: Gallery | Site map</p>
-            </div>
+
+        <hr>
+
+        <!-- Page Editor -->
+        <div class="PageEditor" id="End">
+            <h4>Editor’s Page</h4>
+            <p>
+                Designed the Editor’s page using HTML and CSS,
+                showcasing the editor’s name, role, and completed tasks.
+            </p>
+            <a href="PageEditor_S2.html">Link to the Editor Page</a>
         </div>
+
+        <br><br>
     </div>
-    
-    <script src="js/aboutus.js">
-        
-    </script>
-    
+
     <!-- Modern Footer -->
     <footer class="footer">
         <div class="footer-top">
             <div class="footer-brand">
                 <div class="brand-box">
-                    <img src="images/Logo.png" alt="Logo" class="brand-logo">
+                    <img src="../images/Logo.png" alt="Logo" class="brand-logo">
                     <span class="brand-name">ZERO HUNGER</span>
                 </div>
                 <p class="brand-desc">A global initiative committed to achieving Sustainable Development Goal 2: End hunger, achieve food security and improved nutrition.</p>

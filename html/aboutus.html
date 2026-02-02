@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Zero Hunger</title>
-    <link rel="stylesheet" href="css/Login.css">
-    <link rel="stylesheet" href="css/Navbar.css">
-    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="../css/aboutus.css">
+    <link rel="stylesheet" href="../css/Navbar.css">
+    <link rel="stylesheet" href="../css/Footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Team</title>
 </head>
 <body>
     <!-- Modern Navigation Bar -->
     <nav class="navbar">
         <a href="Home.html" class="nav-brand">
-            <img src="images/Logo.png" alt="Zero Hunger Logo">
+            <img src="../images/Logo.png" alt="Zero Hunger Logo">
         </a>
         <div class="nav-links">
             <a href="Home.html">Home</a>
@@ -25,37 +23,60 @@
             <a href="Feedback.html">Feedback</a>
             <a href="aboutus.html">About us</a>
         </div>
-
     </nav>
 
-    <div class="login-container">
-        <div class="login-card">
-            <h1>WELCOME BACK</h1>
-            <p class="subtitle">Login to your Zero Hunger account</p>
-            
-            <div class="button-group">
-                <button class="primary-btn" onclick="signIn()">
-                    <span>SIGN IN</span>
-                </button>
-                <button class="secondary-btn" onclick="logIn()">
-                    <span>LOG IN</span>
-                </button>
-            </div>
 
-            <div id="profileContainer" class="profile-container"></div>
-            <div id="progressContainer" class="progress-container"></div>
-            <div id="profileCompletionMessage" class="completion-message"></div>
+    <h1>Student Details</h1>
+    
+    
+    <div class="team-members">
+        <div class="team-member" onclick="toggleDetails(this)">
+            <img src="../images/i3.jpg" alt="Juicer 1" title="Juicer 1">
+            <div class="details">
+                <h3>Name: Yashith Chandeepa</h3>
+                <p>Role: Student Number 1</p>
+                <p>Designed and implemented pages: Shop | Splash screen</p>
+            </div>
+        </div>
+      
+        <div class="team-member" onclick="toggleDetails(this)">
+            <img src="../images/i1.jpg" alt="Juicer 2" title="Juicer 2">
+            <div class="details">
+                <h3>Name: Venojan Shanmugarajah</h3>
+                <p>Role: Student Number 2</p>
+                <p>Designed and implemented pages: Feedback | Home page</p>
+            </div>
+        </div>
+      
+        <div class="team-member" onclick="toggleDetails(this)">
+            <img src= "../images/i2.jpg" alt="Juicer 3" title="Juicer 3">
+            <div class="details">
+                <h3>Name: Ashen De Zoysa</h3>
+                <p>Role: Student Number 3</p>
+                <p>Designed and implemented pages: User Profile | Teams</p>
+            </div>
+        </div>
+      
+        <div class="team-member" onclick="toggleDetails(this)">
+            <img src="../images/i4.jpg" alt="Juicer 4" title="Juicer 4">
+            <div class="details">
+                <h3>Name: Dishen Fernando</h3>
+                <p>Role: Student Number 4</p>
+                <p>Designed and implemented pages: Gallery | Site map</p>
+            </div>
         </div>
     </div>
-
-    <script src="js/Login.js"></script>
-
+    
+    <script src="../js/aboutus.js">
+        
+    </script>
+    
     <!-- Modern Footer -->
     <footer class="footer">
         <div class="footer-top">
             <div class="footer-brand">
                 <div class="brand-box">
-                    <img src="images/Logo.png" alt="Logo" class="brand-logo">
+                    <img src="../images/Logo.png" alt="Logo" class="brand-logo">
                     <span class="brand-name">ZERO HUNGER</span>
                 </div>
                 <p class="brand-desc">A global initiative committed to achieving Sustainable Development Goal 2: End hunger, achieve food security and improved nutrition.</p>

@@ -19,7 +19,7 @@ a {
 
 /* Parallax Hero */
 .parallax {
-    background-image: url("../images/Coverphoto.png");
+    background-image: url("../images/hero.jpg");
     min-height: 80vh;
     background-attachment: fixed;
     background-position: center;

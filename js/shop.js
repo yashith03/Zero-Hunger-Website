@@ -20,7 +20,7 @@ Close.addEventListener('click', function (){
 
 let products = null;
                     //fetching data from json file
-fetch('product.json')
+fetch('../product.json')
     .then(response => response.json())
     .then(data => {
         products = data;
@@ -40,7 +40,7 @@ function addDataToHTML(){
             let newProduct = document.createElement('div');
             newProduct.classList.add('item');
             newProduct.innerHTML = 
-            `<img src="${product.image}" alt="">
+            `<img src="../${product.image}" alt="">
             <h2>${product.Name}</h2>
             <div class="Price">$${product.Price}</div>
             <button onclick="addCart(${product.id})">Add To Cart</button>`;
@@ -94,7 +94,7 @@ function addCartTo_HTML(){
                 let newCart = document.createElement('div');
                 newCart.classList.add('item');
                 newCart.innerHTML = 
-                    `<img src="${product.image}">
+                    `<img src="../${product.image}">
                     <div class="Content">
                         <div class="Name">${product.Name}</div>
                         <div class="Price">$${product.Price} / 1 product</div>
