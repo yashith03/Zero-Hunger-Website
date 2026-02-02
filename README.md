@@ -1,13 +1,18 @@
 # 🌍 Zero Hunger - Sustainable Development Goal 2
+
 An end-to-end web platform designed to raise awareness, provide educational resources, and simulate a community-driven marketplace, all dedicated to achieving **Sustainable Development Goal 2: Zero Hunger**.
 
-🚀 Deployment / Live Demo
--------------------------
-🌐 **Live Website** → [https://yashith03.github.io/Zero-Hunger-Website/html/splash.html](https://yashith03.github.io/Zero-Hunger-Website/html/splash.html)  
+---
+
+## 🚀 Deployment / Live Demo
+- 🌐 **Vercel Demo** → [https://zero-hunger-website.vercel.app/](https://zero-hunger-website.vercel.app/)
+- 🌐 **GitHub Pages** → [https://yashith03.github.io/Zero-Hunger-Website/html/splash.html](https://yashith03.github.io/Zero-Hunger-Website/html/splash.html)
+
 *(Note: Navigation starts from the Splash Screen)*
 
-📂 Project Structure
--------------------
+---
+
+## 📂 Project Structure
 ```text
 ZERO-HUNGER-WEBSITE/
 │
@@ -48,8 +53,9 @@ ZERO-HUNGER-WEBSITE/
     └── ... (Product & Content Media)
 ```
 
-🌟 Features
-----------
+---
+
+## 🌟 Features
 
 ### 🏷️ Dynamic Merch Shop (`shop.html`)
 - **JSON-Driven Data**: Products are dynamically loaded from `product.json`.
@@ -72,8 +78,10 @@ ZERO-HUNGER-WEBSITE/
 - **Summary Preview**: Real-time order calculation including totals and itemized lists.
 - **Validation**: Ensures shipping and contact details are accurate before processing.
 
-🚀 Installation Guide
---------------------
+---
+
+## 🚀 Installation Guide
+
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Edge, Safari).
 - (Optional) A local server environment like VS Code "Live Server" extension for the best experience with JSON fetching.
@@ -91,28 +99,29 @@ ZERO-HUNGER-WEBSITE/
    - Open `html/splash.html` in your browser.
    - *Note: If using local files directly (file://), some browsers may block the JSON fetch in the shop due to CORS. Using a local server (e.g., `python -m http.server`) is recommended.*
 
-🖥️ Usage Instructions
---------------------
+---
+
+## 🖥️ Usage Instructions
 1. **Explore the Mission**: Start at the **Home** page to understand the importance of SDG 2.
 2. **Shop for a Cause**: Visit the **Shop**, add items to your cart, and proceed to **Checkout** to see the order summary logic.
 3. **Learn**: Browse the **Content Pages** to educate yourself on global food security challenges.
 4. **Interact**: Use the **Sitemap** to quickly navigate between student-contributed pages and core modules.
 5. **Connect**: Leave suggestions on the **Feedback** page to help us improve the platform.
 
-📊 Performance & Security
-------------------------
+---
+
+## 📊 Performance & Security
 - **Optimized Assets**: Parallax backgrounds and images are optimized for fast loading.
 - **Modular CSS**: Separated styles for Navigation, Footer, and Content ensure minimal style leakage and faster rendering.
 - **Secure Handling**: No sensitive data is transmitted; cart state is handled locally via secure cookie tokens.
 
-🎓 Academic Context
-------------------
+---
+
+## 🎓 Academic Context
 This project was developed as a collaborative initiative for the **University of Westminster / IIT** coursework. It demonstrates proficiency in:
 - **Semantic HTML5 & Modern CSS3** (Flexbox, Grid, Parallax).
 - **Vanilla JavaScript** (ES6+, Fetch API, Cookie Storage).
 - **UI/UX Design** with a focus on accessibility and premium aesthetics.
-
-
 
 ---
 *Created with ❤️ by the Zero Hunger Development Team.*
