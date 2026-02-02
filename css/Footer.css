@@ -1,0 +1,131 @@
+/* Modern Footer Styles */
+.footer {
+    background-color: #121212;
+    color: #a0a0a0;
+    padding: 80px 60px 40px;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 50px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.footer-brand .brand-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.footer-brand .brand-logo {
+    height: 40px;
+    width: auto;
+    background-color: #e8f5e9;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.footer-brand .brand-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #4caf50;
+    letter-spacing: 1px;
+}
+
+.footer-brand .brand-desc {
+    max-width: 350px;
+    line-height: 1.8;
+    font-size: 15px;
+    color: #888;
+}
+
+.footer-column h4 {
+    color: #eee;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 15px;
+}
+
+.footer-column ul li a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #4caf50;
+    padding-left: 5px;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #222;
+    margin-bottom: 40px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-socials a {
+    color: #555;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #4caf50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer {
+        padding: 60px 30px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
