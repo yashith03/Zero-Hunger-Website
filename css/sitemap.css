@@ -1,7 +1,7 @@
 /* Global Settings */
 body {
     font-family: monospace;
-    background-color: #fff; /* White background instead of 'aquamarine' */
+    background-color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -10,6 +10,7 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #333;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -38,78 +39,215 @@ body {
 
 /* Heading */
 #heading {
-    background-color: #fff; /* White instead of lightseagreen */
+    background-color: #fff;
     color: #333;
     text-align: center;
     padding: 20px;
-    margin: 40px auto;
+    margin: 100px auto 40px;
     font-size: 40px;
     font-family: monospace;
-    border: none; /* Removed heavy border */
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: 2px;
 }
 
-/* SVG Sitemap Container */
-#sitemap {
+/* Sitemap Card Container */
+.sitemap-card {
     display: block;
-    margin: 0 auto;
-    height: auto;
+    margin: 0 auto 60px;
+    width: 95%;
+    max-width: 950px;
+    border: 3px solid #2980b9;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 20px;
+    overflow: hidden; /* Contain the sliding views */
+}
+
+.views-container {
     width: 100%;
-    max-width: 900px;
-    border: 1px solid #2980b9; /* Theme Blue Border */
-    border-radius: 30px; /* Rounded corners */
-    background-color: #fff; /* Clean white bg */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    /* Removed background image to stay clean, or we can keep it with overlay */
-    padding: 20px;
+    overflow: hidden;
 }
 
-/* SVG Elements - Styled to match theme */
-#circle {
+.views-wrapper {
+    display: flex;
+    width: 200%; /* Two panels side by side */
+    transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.view-panel {
+    flex: 0 0 50%; /* Each panel takes half of the 200% width */
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+#sitemap {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* SVG Interactive Elements */
+#sitemap a {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#sitemap a:hover rect {
+    fill: #2980b9;
+    transform: scale(1.05);
+}
+
+#sitemap a:hover circle {
+    fill: #2980b9;
+    stroke: rgb(1, 1, 119);
+}
+
+#sitemap a:hover text {
     fill: #fff;
-    stroke: #2980b9; /* Theme Blue */
-    stroke-width: 2;
 }
 
-/* Rectangles (Nodes) - Using Theme Colors */
-#rec1, #rec2, #rec3, #rec4, #rec5 {
-    fill: rgb(1, 1, 119); /* Shop Dark Blue for nodes */
-    stroke: #fff;
-    stroke-width: 1;
-    rx: 5; /* Rounded corners for rects if supported by SVG renderer (it is) */
-}
-
-/* Text inside SVG */
-text {
+/* SVG Text Styling */
+#sitemap text {
     font-family: monospace;
-    font-size: 10px; /* Slight bump for readability */
     font-weight: bold;
-    fill: #333;
-    text-anchor: middle;
-}
-
-/* Text specific overrides if needed */
-#text1 { fill: #2980b9; font-size: 8px; } /* Home node text */
-#text2, #text3, #text4, #text5, #text6 { fill: #fff; font-size: 6px; } /* White text on dark buttons */
-
-/* Connector Lines */
-line {
-    stroke: #2980b9; /* Theme Blue lines */
-    stroke-width: 2;
+    transition: all 0.3s ease;
 }
 
 /* Footer */
 footer {
     background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+    color: #fff;
+    padding: 30px 0;
     margin-top: 50px;
-    /* Fixed footer might cover content on small screens, using static for safety in general layouts, but keeping fixed if requested. 
-       Shop uses static/relative mainly but sitemap had fixed. Let's make it static to avoid overlap. */
-    position: relative; 
-    bottom: 0;
-    width: 100%;
     font-family: monospace;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #heading {
+        font-size: 28px;
+        margin-top: 80px;
+    }
+
+    #sitemap {
+        width: 98%;
+        padding: 20px 10px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+}
+
+/* Legend Styling */
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+.legend-item:hover {
+    background-color: #f0f8ff;
+}
+
+.legend-item input[type="radio"] {
+    display: none; /* Hide actual radio button */
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid rgb(1, 1, 119);
+    transition: all 0.3s ease;
+}
+
+.legend-item input[type="radio"]:checked + .dot {
+    background-color: rgb(1, 1, 119);
+}
+
+.legend-item input[type="radio"]:not(:checked) + .dot {
+    background-color: #fff;
+}
+
+/* Internal Subpages Section Styles */
+.internal-subpages-header {
+    text-align: center;
+}
+
+.internal-subpages-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.internal-subpages-header p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 16px;
+}
+
+.subpage-category {
+    margin-bottom: 60px;
+}
+
+.subpage-category h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.card-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.student-card {
+    background-color: rgb(1, 1, 119);
+    color: white;
+    width: 150px;
+    padding: 12px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.student-card:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }

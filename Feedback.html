@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Feedback</title>
-    <link rel="stylesheet" href="css/Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Zero Hunger</title>
+    <link rel="stylesheet" href="css/Feedback.css">
 </head>
-<body class="feedback">
+<body>
     <!-- Navigation bar -->
     <div class="navbar">
         <a href="Home.html"><img src="images/Logo.png" width="260" height="48" alt="Zero Hunger Logo"></a>
@@ -16,60 +18,118 @@
         <a href="Feedback.html">Feedback</a>
         <a href="aboutus.html">About us</a>
     </div>
-    <form method="post" id="feedbackForm">
-        <fieldset>
-            <legend><b>Feedback</b></legend>
 
-            <label for="name">Enter your name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
-
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
-
-            <p>Was this your first time visiting?</p>
-            <label for="first-time-yes">Yes</label>
-            <input type="radio" id="first-time-yes" name="first-time" value="yes" >
-            <label for="first-time-no">No</label>
-            <input type="radio" id="first-time-no" name="first-time" value="no" >
+    <div class="feedback-container">
+        <div class="feedback-card">
+            <h1>Feedback</h1>
             
-            <p>Was this website informative and easy to navigate through?</p>
-            <label for="navigate-yes">Yes</label><br>
-            <input type="radio" id="navigate-yes" name="navigate" value="yes" >
-            <label for="navigate-no">No</label><br>
-            <input type="radio" id="navigate-no" name="navigate" value="no" >
-            
-            <label for="improvements"> If "No", suggest any improvements for the future:</label><br>
-            <textarea id="improvements" name="improvements"></textarea><br>
+            <form method="post" id="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
 
-            <label for="satisfaction">How satisfied are you with Our services? Choose from 0 to 10, with 1 being "Not satisfied at all!" and 10 being "Extremely satisfied!"</label><br>
-            <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" value="0"><br>
+                <div class="form-group">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
 
-            <p>Would you recommend our services?</p>
-            <label for="recommend-yes">Yes</label><br>
-            <input type="radio" id="recommend-yes" name="recommend" value="yes" >
-            <label for="recommend-no">No</label><br>
-            <input type="radio" id="recommend-no" name="recommend" value="no" >
-           
-            <p>Would you like to receive updates about the website and any offers?</p>
-            <label for="updates-yes">Yes - via Email</label><br>
-            <input type="radio" id="updates-yes" name="updates" value="yes" >
-            <label for="updates-no">No</label><br>
-            <input type="radio" id="updates-no" name="updates" value="no" >
-            
-            <label for="questions">Do you have any additional questions or requests?</label><br>
-            <textarea id="questions" name="questions"></textarea><br><br><br>
+                <div class="form-group">
+                    <p class="question">Was this your first time visiting?</p>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" id="first-time-yes" name="first-time" value="yes">
+                            <span>Yes</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" id="first-time-no" name="first-time" value="no">
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
 
-            <input type="submit" value="Submit" id="submitButton">
-            <input type="reset" value="Cancel">
-        </fieldset>
-    </form>
+                <div class="form-group">
+                    <p class="question">Was this website informative and easy to navigate through?</p>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" id="navigate-yes" name="navigate" value="yes">
+                            <span>Yes</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" id="navigate-no" name="navigate" value="no">
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="improvements">If "No", suggest any improvements for the future:</label>
+                    <textarea id="improvements" name="improvements" rows="4" placeholder="Your suggestions..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="satisfaction">How satisfied are you with Our services? Choose from 0 to 10, with 1 being "Not satisfied at all!" and 10 being "Extremely satisfied!"</label>
+                    <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" value="5">
+                    <div class="range-labels">
+                        <span>0</span>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <p class="question">Would you recommend our services?</p>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" id="recommend-yes" name="recommend" value="yes">
+                            <span>Yes</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" id="recommend-no" name="recommend" value="no">
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <p class="question">Would you like to receive updates about the website and any offers?</p>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" id="updates-yes" name="updates" value="yes">
+                            <span>Yes - via Email</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" id="updates-no" name="updates" value="no">
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="questions">Do you have any additional questions or requests?</label>
+                    <textarea id="questions" name="questions" rows="4" placeholder="Your questions or requests..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitButton">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
     <script src="js/Feedback.js"></script>
 
     <footer id="myFooter">
         <div class="container">
             <h3>Zero Hunger</h3>
-            <p> Yasith Chandeep | Venojan | Ashen De Zoysa | Dishen Fernando </p>
-            <p>Copyright &copy;2024 Zero Hunger </p>
+            <p>Yasith Chandeepa | Venojan | Ashen De Zoysa | Dishen Fernando</p>
+            <p>Copyright &copy;2024 Zero Hunger</p>
         </div>
     </footer>
 </body>

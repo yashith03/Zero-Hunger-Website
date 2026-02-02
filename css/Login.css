@@ -1,10 +1,11 @@
 /* Global Settings */
 body {
     font-family: monospace;
-    background-color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 /* Navigation Bar */
@@ -50,120 +51,115 @@ body {
 /* Login Card */
 .login-card {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     background-color: #fff;
-    border: 1px solid #2980b9; /* Theme Blue Border */
-    border-radius: 30px; /* Rounded corners like Shop */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 60px 50px;
     text-align: center;
 }
 
 /* Heading */
 h1 {
     font-family: monospace;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     color: #333;
     margin: 0 0 10px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 
 .subtitle {
-    font-size: 16px;
-    color: #666;
+    font-size: 14px;
+    color: #999;
     margin: 0 0 40px;
+    font-weight: 400;
 }
 
 /* Button Group */
 .button-group {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 30px;
 }
 
 /* Primary Button (Sign In) */
 .primary-btn {
-    background-color: rgb(1, 1, 119); /* Shop Dark Blue */
+    background-color: #0000aa;
     color: #fff;
     border: none;
-    padding: 18px 40px;
-    border-radius: 10px;
+    padding: 16px 40px;
+    border-radius: 8px;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .primary-btn:hover {
-    background-color: #2980b9; /* Lighter Blue on hover */
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: #0000dd;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 170, 0.4);
 }
 
 /* Secondary Button (Log In) */
 .secondary-btn {
     background-color: transparent;
-    color: rgb(1, 1, 119);
-    border: 2px solid rgb(1, 1, 119);
-    padding: 18px 40px;
-    border-radius: 10px;
+    color: #0000aa;
+    border: 2px solid #0000aa;
+    padding: 16px 40px;
+    border-radius: 8px;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .secondary-btn:hover {
-    background-color: rgb(1, 1, 119);
+    background-color: #0000aa;
     color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 170, 0.3);
 }
 
 /* Profile Container */
 .profile-container {
     margin-top: 30px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 15px;
-    border: 1px solid #2980b9;
 }
 
 /* Form Styling */
 .profile-container fieldset {
-    border: 1px solid #2980b9;
-    border-radius: 15px;
+    border: 1px solid #4a90e2;
+    border-radius: 12px;
     padding: 30px;
-    background-color: #fff;
+    background-color: #f8f9fa;
     margin: 0;
 }
 
 .profile-container legend {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
-    color: #2980b9;
+    color: #4a90e2;
     padding: 0 10px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .profile-container label {
-    display: inline-block;
-    min-width: 100px;
-    text-align: right;
-    margin-right: 15px;
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
     font-weight: 600;
     color: #333;
-    vertical-align: middle;
+    font-size: 13px;
 }
 
 .profile-container input[type="text"],
@@ -171,72 +167,75 @@ h1 {
 .profile-container input[type="email"],
 .profile-container input[type="tel"],
 .profile-container input[type="password"] {
-    width: 300px;
-    max-width: calc(100% - 120px);
+    width: 100%;
     padding: 12px 15px;
-    border: 1px solid #2980b9;
-    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     font-family: monospace;
     font-size: 14px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     transition: all 0.3s ease;
+    background-color: #fff;
 }
 
 .profile-container input:focus {
     outline: none;
-    border-color: rgb(1, 1, 119);
-    box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.1);
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
 }
 
 /* Form Buttons */
 .profile-container button,
 .profile-container input[type="button"] {
-    background-color: rgb(1, 1, 119);
+    background-color: #0000aa;
     color: #fff;
     border: none;
     padding: 12px 30px;
-    border-radius: 8px;
+    border-radius: 6px;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     cursor: pointer;
     margin: 10px 5px 0;
     transition: all 0.3s ease;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .profile-container button:hover,
 .profile-container input[type="button"]:hover {
-    background-color: #2980b9;
+    background-color: #0000dd;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 170, 0.3);
 }
 
 /* Skip button - secondary style */
 .profile-container button:last-child,
 .profile-container input[type="button"]:last-child {
     background-color: transparent;
-    color: rgb(1, 1, 119);
-    border: 2px solid rgb(1, 1, 119);
+    color: #0000aa;
+    border: 2px solid #0000aa;
 }
 
 .profile-container button:last-child:hover,
 .profile-container input[type="button"]:last-child:hover {
-    background-color: rgb(1, 1, 119);
+    background-color: #0000aa;
     color: #fff;
 }
 
 .progress-container {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #2980b9;
-    font-weight: bold;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #4a90e2;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .completion-message {
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 13px;
     color: #666;
 }
 
@@ -245,7 +244,7 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 30px 0;
-    margin-top: 50px;
+    margin-top: 0;
     font-family: monospace;
     text-align: center;
 }
@@ -258,14 +257,21 @@ footer {
 @media (max-width: 768px) {
     .login-card {
         padding: 40px 30px;
+        max-width: 90%;
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 28px;
+        letter-spacing: 2px;
     }
 
     .primary-btn, .secondary-btn {
+        font-size: 14px;
+        padding: 14px 30px;
+    }
+
+    .navbar a {
         font-size: 16px;
-        padding: 15px 30px;
+        padding: 12px 15px;
     }
 }
