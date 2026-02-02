@@ -112,9 +112,7 @@ This project was developed as a collaborative initiative for the **University of
 - **Vanilla JavaScript** (ES6+, Fetch API, Cookie Storage).
 - **UI/UX Design** with a focus on accessibility and premium aesthetics.
 
-📜 License
----------
-This project is licensed under the MIT License.
+
 
 ---
 *Created with ❤️ by the Zero Hunger Development Team.*
