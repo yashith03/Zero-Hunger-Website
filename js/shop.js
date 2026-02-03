@@ -1,3 +1,5 @@
+//js/shop.js
+
 let Cart_icon = document.querySelector('.Cart_icon');
 let Cart = document.querySelector('.Cart');
 let Container = document.querySelector('.Container');
@@ -21,11 +23,19 @@ Close.addEventListener('click', function (){
 let products = null;
                     //fetching data from json file
 fetch('../product.json')
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
         products = data;
         addDataToHTML();
-})
+    })
+    .catch(error => {
+        console.error('Error loading products:', error);
+    });
 
                     //showing data on products
 function addDataToHTML(){

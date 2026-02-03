@@ -1,3 +1,5 @@
+//js/sitemap.js
+
 const viewsWrapper = document.getElementById('views-wrapper');
 const primaryRadio = document.getElementById('primary-radio');
 const subRadio = document.getElementById('sub-radio');

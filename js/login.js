@@ -1,3 +1,5 @@
+//js/login.js
+
 const profileContainer = document.getElementById('profileContainer');
         const progressContainer = document.getElementById('progressContainer');
         const profileCompletionMessage = document.getElementById('profileCompletionMessage');

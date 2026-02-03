@@ -1,3 +1,5 @@
+/*css/page.css*/
+
 *{ 
     box-sizing: border-box;
     font-family: sans-serif;
@@ -78,13 +80,13 @@ a{
  font-weight: bold;
  text-decoration: none;
  padding: 10px;
- background-color:rgba(0, 36, 99, 0.766);
+ 
  border-radius: 10px;
  text-align: center;
  
 }
 
 a:hover{
-    background-color:rgb(1, 70, 219);
+    
     transition: 0.3s ease-in-out;
 }
