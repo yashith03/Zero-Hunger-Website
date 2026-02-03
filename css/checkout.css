@@ -73,7 +73,10 @@ body {
 }
 
 /* Cart Item Styling (for dynamically added items) */
-.cart-items > div {
+.cart-items .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
     border: 1px solid #e0e0e0;
     border-radius: 15px;
@@ -82,9 +85,49 @@ body {
     transition: all 0.3s ease;
 }
 
-.cart-items > div:hover {
+.cart-items .item:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items .item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+.cart-items .item .info {
+    flex-grow: 1;
+}
+
+.cart-items .item .Name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cart-items .item .Price {
+    font-size: 14px;
+    color: #666;
+}
+
+.cart-items .item .Quantity {
+    font-weight: bold;
+    color: #2980b9;
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+.cart-items .item .returnPrice {
+    font-weight: bold;
+    color: rgb(1, 1, 119);
+    font-size: 18px;
+    min-width: 80px;
+    text-align: right;
 }
 
 /* Back Button */

@@ -6,14 +6,14 @@ let Cart_list = [];
 function CheckCart() {             //Function to get data from cookies
     const cookievalue = document.cookie.split('; ').find(row => row.startsWith('Cart_list='));
     if (cookievalue) {
-        Cart_list = JSON.parse(cookievalue.split('=')[1]);
+        Cart_list = JSON.parse(decodeURIComponent(cookievalue.split('=')[1]));
     }
 }
 CheckCart();
 
                                     // Function for adding cart to HTML
 function addCartTo_HTML() {
-    const Cart_listHTML = document.querySelector('.ReturnCart .list');
+    const Cart_listHTML = document.querySelector('.cart-items.list');
     const Total_QuantityHTML = document.querySelector('.Total_Quantity');
     const totalPriceHTML = document.querySelector('.totalPrice');
     let Total_Quantity = 0;

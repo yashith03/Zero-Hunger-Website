@@ -69,7 +69,7 @@ function CheckCart(){
     .split('; ')
     .find(row => row.startsWith('Cart_list='));
     if(cookievalue){
-        Cart_list = JSON.parse(cookievalue.split('=')[1]);
+        Cart_list = JSON.parse(decodeURIComponent(cookievalue.split('=')[1]));
     }else{
         Cart_list = [];
     }
@@ -85,7 +85,7 @@ function addCart($idProduct){
     }else{
         Cart_list[$idProduct].Quantity++;  //if the product is  in the cart,quantity increases.
     }
-    document.cookie = "Cart_list=" + JSON.stringify(Cart_list) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/;";
+    document.cookie = "Cart_list=" + encodeURIComponent(JSON.stringify(Cart_list)) + "; expires=Thu, 31 Dec 2028 23:59:59 UTC; path=/;";
 
     addCartTo_HTML();
 }
@@ -139,6 +139,6 @@ function changeQuantity($idProduct, $type){
             break;
     }
                           
-    document.cookie = "Cart_list=" + JSON.stringify(Cart_list) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/;";       //       saving new data in cookie 
+    document.cookie = "Cart_list=" + encodeURIComponent(JSON.stringify(Cart_list)) + "; expires=Thu, 31 Dec 2028 23:59:59 UTC; path=/;";       //       saving new data in cookie 
     addCartTo_HTML(); // reloading HTML view cart
 }
