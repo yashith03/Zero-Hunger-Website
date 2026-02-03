@@ -64,7 +64,7 @@
     margin-bottom: 15px;
 }
 
-.footer-column ul li a {
+.footer-column ul li a  {
     color: #888;
     text-decoration: none;
     font-size: 14px;
@@ -109,6 +109,27 @@
 .footer-socials a:hover {
     color: #4caf50;
 }
+/* Inline Team Links */
+.team-inline ul {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.team-inline ul li {
+    margin: 0;
+}
+
+.team-inline ul li:not(:last-child)::after {
+    content: "|";
+    margin-left: 12px;
+    color: #555;
+}
+.team-inline ul li a:hover {
+    padding-left: 0;
+}
+
+
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
